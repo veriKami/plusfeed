@@ -22,7 +22,8 @@ from google.appengine.api import memcache
 td = timedelta(hours=7)
 
 allurls = re.compile(r'/(.*)')
-idurls = re.compile(r'[0-9]+')
+# idurls = re.compile(r'[0-9]+')
+idurls = re.compile(r'106413090159067280619') # only whitelist one ID
 remtags = re.compile(r'<.*?>')
 remspaces = re.compile(r'\s+')
 commas = re.compile(',,',re.M)
